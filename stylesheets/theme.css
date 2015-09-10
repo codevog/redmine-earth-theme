@@ -1,0 +1,1247 @@
+* {
+    box-sizing: border-box;
+    transition: .5s all ease;
+}
+
+html {
+    background: #f2f2f2;
+    overflow-x: hidden;
+}
+
+body {
+    font-family: Arial, 'Helvetica Neue', sans-serif;
+    font-size: 100%;
+    left: 0;
+    margin: 0;
+    padding: 0 !important;
+    position: relative;
+    right: 0;
+    overflow: hidden;
+}
+
+h1, h2, h3, h4 {
+    font-family: Arial, 'Helvetica Neue', sans-serif;
+}
+
+td div.number {
+    width: 63% !important;
+    text-align: center !important;
+}
+
+#tab-content-currency_rates td div.number {
+    width: 58% !important;
+    text-align: right !important;
+}
+
+#admin-menu a:before {
+    content: "\f055";
+    font-family: 'FontAwesome', sans-serif;
+}
+
+.clearfix:after {
+    content: '';
+    clear: both;
+    display: block;
+    height: 0;
+    visibility: hidden;
+}
+
+.top-menu-wrapper {
+    background: #213133;
+}
+
+#top-menu {
+    background: #213133;
+    height: 50px;
+    line-height: 40px;
+    margin: 0 auto;
+    max-width: 1200px;
+    width: 100%;
+    padding: 2px 0 0;
+}
+
+#top-menu a {
+    font-weight: 400;
+    text-transform: uppercase;
+    margin-right: 15px;
+    font-size: 10px;
+}
+
+#top-menu a.logout {
+    margin-right: 0;
+}
+
+#main-menu {
+    margin: 0 auto;
+    max-width: 1200px;
+    padding: 5px 0;
+    position: relative;
+    left: auto;
+    width: 100%;
+}
+
+#main-menu li a {
+    color: #56718e;
+    font-weight: 400;
+}
+
+#main-menu li a.selected,
+#main-menu li a:hover,
+#main-menu li a.selected:hover {
+    background: #21ad52;
+    border-radius: 3px;
+    color: #fff;
+}
+
+.main-menu-wrapper {
+    background: #fff;
+    border: solid #f2f2f2;
+    border-width: 1px 0 1px;
+}
+
+#main {
+    background: #fafafa;
+    margin: 0 auto;
+    max-width: 1200px;
+    width: 100%;
+}
+
+#content,
+#footer,
+#wrapper {
+    background: #f2f2f2;
+}
+
+#header {
+    background: transparent;
+    color: inherit;
+    min-height: inherit;
+    padding: 0;
+}
+
+.logo {
+    background: url(../images/logo-new.png) 0 11% no-repeat;
+    width: 125px;
+    height: 77px;
+    float: left;
+    margin-right: 15px;
+    margin-bottom: 3px;
+}
+
+#header > .header-wrapper h1 {
+    float: left;
+    margin-bottom: 3px;
+    font-size: 13px;
+    font-family: 'Verdana', sans-serif;
+    color: #fff;
+    background-color: #231f20;
+    text-align: center;
+    padding: 3px 10px 4px 10px;
+    -webkit-border-radius: 60px;
+    -moz-border-radius: 60px;
+    border-radius: 60px;
+    display: block;
+    font-weight: 300;
+    max-width: 150px;
+    max-height: 38px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    line-height: 20px;
+    margin-top: 25px;
+}
+
+.header-wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 12px 0;
+}
+
+input, select {
+    border: 1px solid #d3d3d3;
+    border-radius: 2px;
+    height: 25px;
+}
+
+select[multiple="multiple"] {
+    height: auto;
+}
+
+#quick-search {
+    margin-top: 25px;
+}
+
+p.pagination {
+    float: left;
+    margin-top: 0;
+}
+
+#sidebar h3 {
+    font-size: 16px;
+}
+
+/*==========FALSH NOTICE======*/
+div.flash.notice {
+    border: none;
+    border-left: 20px solid #1ABB9B;
+    background: rgba(0,255,0,0.1);
+    padding-left: 10px;
+    border-radius: 4px;
+    position: relative;
+    top: 0;
+    width: 100% !important;
+}
+
+.controller-settings div.flash.notice {
+    top: 0;
+}
+
+div.flash.error, #errorExplanation {
+    border: none;
+    border-left: 20px solid #880000;
+    background: rgba(255,0,0,0.1);
+    padding-left: 10px;
+    border-radius: 4px;
+}
+
+div.flash.error, #errorExplanation ul {
+    margin: 2px;
+}
+
+p.nodata {
+    border: none;
+    border-left: 20px solid #FDBF3B;
+    background: #FFEBC1;
+    padding-left: 10px;
+    border-radius: 4px;
+}
+/*==========CALENDAR==========*/
+#ui-datepicker-div {
+    padding: 0;
+}
+
+.ui-datepicker-header {
+    background: #6f7c93;
+    border: none;
+}
+
+.ui-corner-all, .ui-corner-bottom, .ui-corner-left, .ui-corner-bl {
+    border-radius: 0 !important;
+}
+
+.ui-datepicker table {
+    display: block;
+}
+
+.ui-datepicker table .ui-datepicker-week-col {
+    padding-left: 20px;
+}
+
+#admin-menu a {
+    line-height: 1;
+}
+
+.controller-admin.action-index #admin-menu a {
+    font-size: 15px;
+    display: block;
+    height: 100%;
+    width: 100%;
+    padding: 10px 20px;
+    color: #213133;
+    -webkit-transition: background 0.2s;
+    -moz-transition: background 0.2s;
+    transition: background 0.2s;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.controller-admin.action-index #admin-menu a:hover {
+    color: #ffb862;
+}
+
+.controller-admin.action-index #admin-menu a:before {
+    padding-right: 5px;
+    font-size: 10em;
+    width: 100%;
+    display: block;
+    margin-bottom: 30px;
+    font-family: 'FontAwesome', sans-serif;
+}
+
+#admin-menu a:before {
+    font-family: 'FontAwesome', sans-serif;
+}
+
+
+
+#sidebar #admin-menu a {
+    position: relative;
+    padding-left: 25px !important;
+    font-family: 'Open Sans', sans-serif;
+    line-height: 25px;
+}
+
+#sidebar #admin-menu a:before {
+    position: absolute;
+    left: 4px;
+    height: 100%;
+    line-height: 25px;
+    color: #169;
+}
+#sidebar #admin-menu a.company-rating:before {
+    line-height: 1.1;
+}
+
+#sidebar #admin-menu a.theme-manager:before {
+    line-height: 1.1;
+}
+
+#sidebar #admin-menu a.selected:before {
+    color: #fff;
+}
+
+#sidebar #admin-menu a:hover:before {
+    color: inherit;
+}
+
+#admin-menu a.projects:before {
+    content: "\f0ae";
+}
+
+#admin-menu a.server_authentication:before {
+    content: "\f0ad";
+}
+
+#admin-menu a.users:before {
+    content: "\f007";
+}
+
+#admin-menu a.groups:before {
+    content: "\f0c0";
+}
+
+#admin-menu a.roles:before {
+    content: "\f1c0";
+}
+
+#admin-menu a.trackers:before {
+    content: "\f15c";
+}
+
+#admin-menu a.issue_statuses:before {
+    content: "\f14b";
+}
+
+#admin-menu a.workflows:before {
+    content: "\f0f7";
+}
+
+#admin-menu a.custom_fields:before {
+    content: "\f120";
+}
+
+#admin-menu a.enumerations:before {
+    content: "\f03a";
+}
+
+#admin-menu a.settings:before {
+    content: "\f085";
+}
+
+#admin-menu a.plugins:before {
+    content: "\f055";
+}
+
+#admin-menu a.info:before {
+    content: "\f05a";
+}
+
+#admin-menu a.server_authentication:before {
+    content: "\f0ad";
+}
+
+#admin-menu a.company-rating:before {
+    content: "\f005";
+}
+
+#admin-menu a.company-rating:hover:before {
+    color: #fff;
+}
+
+#admin-menu a.contacts:before {
+    content: "\f095";
+}
+
+#admin-menu a.theme-manager:before {
+    content: "\f13b";
+}
+
+#admin-menu:after {
+    content: '';
+    display: block;
+}
+
+.controller-admin.action-index #admin-menu {
+    margin-bottom: 15px;
+}
+
+.controller-admin.action-index #admin-menu li {
+    border-bottom: 1px solid #bbb;
+    padding: 0 0 0 10px;
+    transition: 0.3s;
+}
+
+.controller-admin.action-index #admin-menu li:hover{
+    background: #bbb;
+}
+
+.controller-admin.action-index #admin-menu li:hover a{
+    color: #FFF;
+}
+
+.my-project {
+    background: none;
+    position: relative;
+}
+
+.my-project:before {
+    content: '\f005';
+    position: absolute;
+    left: 0;
+    font-family: 'FontAwesome', sans-serif;
+    top: -1px;
+}
+
+div.issues h3,
+div.members h3 {
+    background: none;
+    font-family: 'FontAwesome', sans-serif;
+    padding-left: 0;
+}
+
+div.issues h3:before {
+    content: "\f0ae";
+    margin-right: 3px;
+    font-size: 14px;
+}
+
+div.members h3:before {
+    content: "\f0c0";
+    margin-right: 3px;
+    font-size: 14px;
+    top: -1px;
+    position: relative;
+}
+
+dt.time-entry,
+dt.issue,
+div.projects h3,
+dt.issue-edit {
+    background-image: none;
+    font-family: 'FontAwesome', sans-serif;
+    position: relative;
+}
+
+dt.time-entry:before {
+    content: "\f017";
+    margin-right: 3px;
+    font-size: 14px;
+    top: 50%;
+    margin-top: -7px;
+    position: absolute;
+    left: 0;
+}
+
+dt.issue:before {
+    content: "\f0ae";
+    margin-right: 3px;
+    font-size: 14px;
+    top: 50%;
+    margin-top: -7px;
+    position: absolute;
+    left: 0;
+}
+
+div.projects h3:before {
+    content: "\f0ae";
+    margin-right: 3px;
+    font-size: 14px;
+    position: absolute;
+    left: 0;
+}
+
+dt.issue-edit:before {
+    content: "\f044";
+    margin-right: 3px;
+    font-size: 14px;
+    top: 50%;
+    margin-top: -7px;
+    position: absolute;
+    left: 0;
+}
+
+#sidebar h3 {
+    font-size: 18px;
+    font-weight: 400;
+}
+table.list thead {
+    border: 1px solid #e6e6e6;
+}
+
+.icon-report:before{
+    content: "\f200";
+}
+
+.month th {
+    font-size: 12px;
+    font-weight: 400;
+}
+
+.icon-report:before{
+    content: "\f073";
+}
+
+#admin-menu a.icon-report:before{
+    content: "\f073";
+}
+
+#admin-menu a.icon-report:hover:before {
+    color: #fff;
+}
+
+.icon:before {
+    color: #213133;
+}
+
+.new_staff_report input {
+    display: block;
+    margin: 15px 0 0;
+}
+
+.pagination {
+    margin-top: 15px !important;
+}
+
+#sidebar #admin-menu a.staff-reports:before {
+    line-height: 1.1;
+}
+
+.gantt_hdr {
+    font-size: 12px;
+}
+
+fieldset#filters td.values input {
+    height: 25px;
+}
+
+.tabular.settings textarea {
+    box-sizing: border-box;
+    width: auto;
+    margin-left: 10px;
+}
+
+.tabular.settings p {
+    padding-left: 0;
+}
+
+.action-clients_list input[type="submit"] {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.tabular.settings label {
+    margin-left: 10px;
+}
+
+table.list th {
+    font-size: 14px;
+    font-weight: 300;
+}
+
+#staff-report-main-menu {
+    bottom: auto !important;
+    background: #fff;
+    border-top: 1px solid #eee;
+    position: relative;
+}
+
+#staff-report-main-menu:before,
+#staff-report-main-menu:after {
+    content: '';
+    position: absolute;
+    top: -1px;
+    background: #fff;
+    border-top: 1px solid #eee;
+    height: 100%;
+    width: 30%;
+}
+
+.table-wrapper {
+    overflow-x: auto;
+}
+
+#staff-report-main-menu:before {
+    right: 100%;
+}
+
+#staff-report-main-menu:after {
+    left: 100%;
+}
+
+#projects-index ul.projects div.root .wiki p {
+    font-size: 14px;
+}
+
+html>body #content {
+    padding-top: 30px;
+}
+
+.splitcontentleft .wiki p {
+    margin-top: 12px;
+}
+
+.splitcontentleft > ul {
+    margin: 0;
+}
+
+.splitcontentleft > ul > li:last-child {
+    margin-bottom: 10px;
+}
+table.list.members th {
+    text-align: left !important;
+    padding-left: 40px !important;
+}
+
+table.members td {
+    padding-left: 40px !important;
+}
+
+table.members td,
+#tab-content-activities table.list td {
+    height: 40px;
+    vertical-align: middle;
+    background-position: 12px 50% !important;
+}
+
+#tab-content-activities table.list tr > td:first-child {
+    padding-left: 20px !important;
+}
+
+#new_rating table tr  > th:first-child,
+.controller-client_ratings table tr  > th:first-child,
+.controller-admin_ratings table tr  > th:first-child,
+.controller-admin_ratings.action-clients_list table tr  > th:first-child + th,
+.controller-admin_ratings.action-clients_list table tr  > th:first-child + th + th,
+#form-reports th.checkbox + th,
+.controller-admin.action-projects tr > th:first-child,
+table.groups th:first-child,
+.controller-roles table th:first-child,
+.controller-trackers table th:first-child,
+.controller-issue_statuses table th:first-child,
+.controller-enumerations table th:first-child{
+    padding-left: 20px;
+    text-align: left !important;
+}
+
+.controller-admin.action-projects tr td.name,
+table.groups tr > td:first-child,
+.controller-roles table tr > td:first-child,
+.controller-trackers table tr > td:first-child,
+.controller-issue_statuses table tr > td:first-child,
+.controller-enumerations table tr > td:first-child {
+    padding-left: 20px;
+}
+
+table.groups tr > th:nth-child(2) {
+    padding-right: 10px;
+}
+.controller-roles table tr > td:nth-child(2) {
+    padding-right: 2px;
+}
+.controller-admin.action-projects tr > th:nth-child(3) {
+    padding: 4px 10px 4px 4px;
+}
+
+.action-my_reports #form-reports th.checkbox + th {
+    text-align: center !important;
+}
+
+#new_rating table td,
+.controller-client_ratings table td,
+.action-company_rating_period table td {
+    height: 50px;
+    vertical-align: middle;
+}
+
+.action-company_rating_period table tbody > tr:nth-child(odd) {
+    background: #f6f7f8;
+}
+
+.action-company_rating_period table tbody > tr:nth-child(even) {
+    background: #fff;
+}
+
+table.list.average td + td {
+    width: 370px !important;
+}
+
+.stars-wrapper,
+.raty-stars {
+    text-align: center !important;
+}
+
+.rating-title {
+    font-size: 14px;
+}
+
+#new_staff_report tr > td:first-child {
+    text-align: center;
+    padding: 0 15px;
+}
+
+#new_staff_report td div.number {
+    text-align: right !important;
+    width: 70% !important;
+}
+.controller-users table.list tr > th:first-child {
+    padding-left: 14px;
+}
+
+.controller-users table.list tr > th:nth-child(2),
+.controller-users table.list tr > th:nth-child(3) {
+    padding-left: 8px;
+}
+.controller-users table.list th {
+    text-align: left !important;
+}
+
+.controller-users table.list {
+    font-size: 14px;
+}
+
+tr.user td.username {
+    padding-left: 15px;
+}
+tr.user td.firstname,
+tr.user td.lastname {
+    padding-left: 10px;
+}
+
+div.tabs-buttons {
+    background: none;
+}
+
+.reorder a {
+    margin: 0 5px;
+}
+
+label + input,
+label + select,
+label + input + input {
+    margin-left: 10px;
+}
+
+.tabular.settings em {
+    margin-left: 316px;
+}
+
+#tab-content-projects .tabular label {
+    float: none;
+    clear: both;
+}
+
+.tabular label.inline {
+    display: block;
+    text-align: left;
+}
+#tab-content-mail_handler .tabular.settings label {
+    width: 315px;
+}
+
+.enabled_scm table tbody > tr{
+    background: #fff;
+    border: 1px solid #e6e6e6;
+}
+
+table.list tr > th:first-child,
+#tab-content-staff_rating_criterias table.list tr > th:nth-child(2),
+#tab-content-company_rating_criterias table.list tr > th:nth-child(2),
+#tab-content-export_reports_definitions table tr > th {
+    text-align: left !important;
+    padding-left: 20px;
+}
+
+#tab-content-currency_rates tr > td:nth-child(2) {
+    padding-left: 10px !important;
+}
+
+table.plugins td {
+    padding: 10px;
+}
+
+.box {
+    padding: 6px 12px;
+}
+
+.icon-folder:before {
+    content: '\f115';
+    font-size: 14px;
+}
+
+.icon-edit,
+.icon-del,
+.icon-folder {
+    padding-left: 0;
+}
+
+.fa.sidebar-menu-trigger {
+    display: none;
+}
+
+#admin-menu a:before {
+    display: none !important;
+}
+
+#admin-menu .icon.icon-issue {
+    background: url("../../../images/ticket.png") 0 50% no-repeat !important;
+}
+
+#admin-menu .icon.icon-report {
+    background: url("../../../images/report.png") 0 50% no-repeat !important;
+}
+
+#admin-menu .icon-file.text-css {
+    background: url(../../../images/files/css.png) 0 50% no-repeat !important;
+}
+
+.icon-user:before {
+    content: '\f056';
+    font-family: FontAwesome, sans-serif;
+}
+
+.controller-calendars span.tip {
+    width: 170px;
+    top: 5px;
+    left: 5px;
+}
+
+table.cal tr td:nth-child(n+5) span.tip {
+    right: 5px;
+    left: initial;
+}
+
+.controller-staff_reports a.fa.sidebar-menu-trigger,
+.controller-vocation_periods a.fa.sidebar-menu-trigger {
+    top: 120px;
+}
+
+#top-menu #loggedas {
+    float: right;
+    margin-top: 1px;
+}
+
+.new_membership #principals_for_new_member + p {
+    clear: both;
+    padding-top: 10px;
+}
+
+#tab-content-company_contact_settings p em {
+    display: block;
+}
+
+.controller-staff_reports table.list tr > td:last-child {
+    white-space:  nowrap;
+}
+
+.new_reports_pdf tr > td:last-child {
+    text-align: right !important;
+}
+
+div.tabs-buttons {
+    border: 0;
+    bottom: 3px;
+}
+
+.buttons > a.icon:first-child,
+.contextual > a.icon:first-child {
+    padding-left: 0;
+}
+
+.controller-activities .other-formats {
+    margin-left: 0;
+}
+
+#quick-search a {
+    color: #555;
+    font-size: 14px;
+}
+
+input[type='text'],
+input[type='password'] {
+    padding-left: 5px;
+}
+
+select,
+textarea {
+    border-radius: 2px;
+    border: 1px solid #d3d3d3;
+}
+
+#loggedas {
+    font-size: 10px;
+    text-transform: uppercase;
+    /*line-height: normal;*/
+}
+
+#top-menu #loggedas .user {
+    text-decoration: underline;
+    box-sizing: border-box;
+    display: inline-block;
+    /*line-height: normal;*/
+    max-width: 100%;
+    overflow: hidden;
+    /*padding: 5px 10px;*/
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+#login-form table {
+    border-radius: 5px;
+    background: #fff;
+    border: 1px solid rgba(33, 49, 51, 0.1);
+}
+
+#login-form label,
+#login-form a {
+    font-weight: 400;
+    font-size: 14px;
+}
+
+#account .register {
+    margin-right: 0;
+}
+
+.action-login.menu-push-toright #top-menu {
+    left: 0;
+}
+
+table.average tr > td:first-child {
+    min-width: 158px;
+}
+
+.controller-staff_reports.action-index table tr > td:last-child a:not(.icon):before {
+    content: '\f056';
+    font-family: FontAwesome, sans-serif;
+    font-size: 14px;
+    color: #213133;
+    margin-right: 2px;
+}
+
+.controller-staff_reports.action-index table tr > td:last-child a:not(.icon):hover {
+    text-decoration: none;
+}
+
+.controller-reports_pdfs table .state {
+    min-width: 206px;
+    display: block;
+}
+
+.tabular.settings label {
+    font-weight: 400;
+    color: #213133;
+    font-size: 14px;
+}
+
+fieldset#filters table#filters-table .filter {
+    width: 100%;
+}
+
+fieldset#filters table {
+    width: 100%;
+}
+
+#staff-report-main-menu li a {
+    font-weight: 400 !important;
+    font-size: 14px;
+}
+
+#staff-report-main-menu li {
+    margin: 0 -4px 0 0 !important;
+}
+
+.icon-export {
+    position: relative;
+}
+
+.icon-export:before {
+    content: '\f175';
+    font-family: FontAwesome, sans-serif;
+    position: absolute;
+    left: 0;
+}
+
+.application-pdf {
+    color: #213133;
+}
+
+.icon-import:before,
+.application-pdf:before {
+    content: '\f1c1';
+    font-family: FontAwesome, sans-serif;
+}
+
+.tabular select {
+    max-width: 200px;
+}
+
+.tabular input,
+.tabular.settings textarea {
+    max-width: calc(100% - 316px);
+    max-width: -moz-calc(100% - 316px);
+}
+
+.tabular.settings textarea {
+    margin-left: 316px;
+}
+
+.jstElements,
+.jstEditor {
+    margin-left: 10px;
+}
+
+.tabular.settings input[type='checkbox'] {
+    max-width: none;
+}
+
+.icon-lock:before {
+    content: '\f187';
+    font-family: FontAwesome, sans-serif;
+}
+
+#user_login, #user_firstname, #user_lastname, #user_mail, #my_account_form select,
+#user_form select, #user_identity_url {
+    width: 100%;
+    max-width: none;
+    margin-left: 0;
+}
+
+#my_account_form .tabular p {
+    padding-left: 120px;
+}
+
+.controller-my.action-account .tabular label {
+    font-size: 14px;
+    font-weight: 400;
+    margin-left: 0;
+    width: auto;
+}
+
+.controller-my.action-account #my_account_form .tabular p {
+    padding-left: 0;
+}
+
+#tab-content-mail_handler .tabular.settings textarea,
+#tab-content-mail_handler .tabular.settings input {
+    margin-left: 10px;
+    width: 100%;
+    max-width: calc(100% - 336px);
+    max-width: -moz-calc(100% - 336px);
+}
+
+#tab-content-mail_handler .tabular.settings input[type='checkbox'] {
+    width: auto;
+}
+
+#tab-content-mail_handler .tabular.settings em {
+    margin-left: 336px;
+}
+
+.action-company_rating_period a.icon-checked:before {
+    content: "\f00c";
+    font-family: FontAwesome, sans-serif;
+}
+
+input[type='button'],
+input[type='checkbox'] {
+    max-width: none !important;
+}
+
+input[type='checkbox'] {
+    width: auto !important;
+}
+
+.controller-issues.action-new .tabular input,
+.controller-issues.action-new .tabular textarea {
+    max-width: none;
+}
+
+.controller-issues.action-new .jstElements,
+.controller-issues.action-new .jstEditor {
+    margin-left: 10px;
+}
+
+.controller-issues.action-new .tabular p {
+    padding-right: 10px;
+}
+
+input[type='checkbox']#issue_is_private + label {
+    display: inline-block !important;
+}
+
+input.autocomplete {
+    height: 25px;
+}
+
+form .attributes select,
+.tabular textarea {
+    width: 100%;
+}
+
+.controller-issues.action-new .tabular div > p:first-child {
+    padding-right: 0;
+    margin-right: 10px !important;
+}
+
+fieldset#filters td.add-filter {
+    text-align: left;
+}
+
+table.time-entries td.project {
+    text-align: left;
+    padding-left: 10px;
+    white-space: normal;
+}
+
+table.time-entries td.checkbox {
+    padding-left: 19px;
+}
+
+table.time-entries a,
+table.time-entries td {
+    font-size: 14px;
+}
+
+table.time-entries td.issue {
+    min-width: 150px;
+}
+
+.controller-issues.action-index td.subject {
+    min-width: 200px;
+}
+
+#tab-content-issues label.inline {
+    display: inline-block;
+    width: auto;
+}
+
+#search_input {
+    max-width: 100%;
+}
+
+.controller-admin.action-projects tr td.name,
+.controller-admin.action-projects tr td.name a {
+    white-space: normal;
+    min-width: 200px;
+}
+
+.controller-my table td.project,
+.controller-my table td.subject {
+    white-space: normal;
+    min-width: 200px;
+    text-align: left;
+}
+
+em.info {
+    font-size: 12px;
+}
+
+p.other-formats {
+    text-align: left;
+    clear: left;
+    margin: 15px 0;
+    padding: 7px 0;
+}
+
+.pagination .items {
+    margin-right: 10px;
+}
+
+.logged {
+    display: inline-block;
+    margin-right: 5px;
+    overflow: hidden;
+}
+
+.controller-welcome .projects.box ul {
+    list-style-type: none;
+    padding-left: 20px;
+}
+
+.controller-welcome .projects.box h3 {
+    font-size: 18px;
+}
+
+.controller-welcome .projects.box h3:before {
+    font-size: 16px;
+}
+
+.controller-welcome .projects.box p {
+    font-size: 14px;
+}
+
+.splitcontentleft .wiki p {
+    font-size: 14px;
+}
+
+.jstElements {
+    margin-left: 316px;
+}
+
+.jstEditor {
+    margin-left: 316px;
+}
+
+.tabular.settings .jstEditor textarea {
+    margin-left: 0;
+    width: 100%;
+    max-width: none;
+}
+
+#projects-index ul.projects div.root a.project {
+    font-family: "Arial", "Helvetica Neue", sans-serif;
+    color: #213133;
+}
+
+.controller-gantts .contextual {
+    margin-top: 17px;
+}
+
+.controller-projects .jstElements,
+.controller-projects .jstEditor,
+.controller-wiki .jstElements,
+.controller-wiki .jstEditor {
+    margin-left: 10px;
+}
+
+#content {
+    padding-left: 0;
+}
+
+#footer {
+    padding-top: 40px;
+}
+
+.context-menu-selection {
+    background: none !important;
+    color: #6b7d94 !important;
+}
+
+.context-menu-selection a, .context-menu-selection a:hover {
+    color: #169 !important;
+}
+
+.icon-time:before {
+    content: '\f017';
+    color: #213133;
+    font-family: 'FontAwesome', sans-serif;
+}
