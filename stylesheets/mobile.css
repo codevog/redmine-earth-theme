@@ -25,14 +25,6 @@ html, body, #main {
     }
 }
 
-/* #Tablet (Portrait)
-================================================== */
-
-/* Note: Design for a width of 768px */
-@media only screen and (min-width: 768px) and (max-width: 959px) {
-
-}
-
 @media only screen and (max-width: 1023px) {
     html {
         height: 100%;
@@ -330,7 +322,7 @@ html, body, #main {
     }
 
     #top-menu > ul {
-        margin-top: 50px;
+        margin-top: 90px;
         padding: 0 0 20px 20px;
     }
 
@@ -440,6 +432,10 @@ html, body, #main {
 
 /* Note: Design for a width of 320px */
 @media only screen and (max-width: 767px) {
+
+    .controller-admin_ratings div#content > div.contextual {
+        padding-top: 10px;
+    }
 
     .controller-issues.action-new .jstElements,
     .controller-issues.action-new .jstEditor {
@@ -557,7 +553,8 @@ html, body, #main {
 
     }
 
-    html > body #content, #main.nosidebar #content {
+    html > body #content,
+    #main.nosidebar #content {
         min-height: 0;
         -webkit-box-shadow: none;
         -moz-box-shadow: none;
@@ -585,7 +582,7 @@ html, body, #main {
         left: 0;
         top: 0;
         width: 100%;
-        z-index: 200;
+        z-index: 1;
         -webkit-transition: top 0.1s, bottom 0.5s;
         overflow: hidden;
     }
@@ -606,9 +603,12 @@ html, body, #main {
         top: -110px;
     }
 
-    /*configure font size*/
     #main a {
         font-size: 13px;
+    }
+
+    .controller-vocation_periods a.fa.sidebar-menu-trigger {
+        top: 10px;
     }
 
     #main .buttons a {
@@ -630,10 +630,9 @@ html, body, #main {
         line-height: 12px;
     }
 
-    /* LAYOUT */
     #main {
         margin: 0;
-        padding-bottom: 50px;
+        padding-bottom: 0;
         position: relative;
     }
 
@@ -718,8 +717,6 @@ html, body, #main {
         display: none;
     }
 
-    /* LINKS */
-    /* TABLES */
     .splitcontentleft {
         float: none;
         width: auto;
@@ -732,24 +729,10 @@ html, body, #main {
         width: auto;
     }
 
-    /* TABULAR FORMS */
-    /* FLASH & ERROR MESSAGES */
-    /* AJAX INDICATOR */
-    /* CALENDAR */
-    /* TOOLTIPS */
-    /* PROGRESS BAR */
-    /* TABS */
-    /* AUTO-COMPLETE */
-    /* DIFF */
-    /* WIKI */
-    /* MY PAGE LAYOUT */
-    /* GANTT CHART */
-    /* ICONS */
     .icon-meta {
         background-image: url(../images/meta.png);
     }
 
-    /* CLEARFIX */
     #header:after,
     #main:before,
     #sidebar:before,
@@ -1832,5 +1815,18 @@ and (orientation: landscape) {
 
     #header > h1 {
         margin-top: 0;
+    }
+}
+
+@media only screen and (min-width: 1024px) and (max-width: 1155px) {
+    #top-menu a {
+        font-size: 8px !important;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1200px) {
+    .splitcontentleft,
+    .splitcontentright {
+        width: 100%;
     }
 }
